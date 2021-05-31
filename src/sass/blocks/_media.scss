@@ -1,0 +1,397 @@
+@media(max-width: 1360px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media(max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .about {
+        &__grid {
+            grid-template-columns: 400px 530px;
+            column-gap: 30px;
+        }
+
+        .container {
+            padding-right: 0;
+        }
+
+        &__skills {
+            grid-template-columns: repeat(2, 250px);
+            column-gap: 30px;
+        }
+    }
+
+    .skill {
+        padding-left: 50px;
+    }
+
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 390px);
+            column-gap: 50px;
+        }
+    }
+
+    .skills {
+        &__ratings {
+            margin-top: 100px;
+            column-gap: 80px;
+        }
+    }
+
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            row-gap: 35px;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+            
+        }
+    }
+
+    .contacts {
+        padding-top: 90px;
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 400px 540px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2,265px);
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .about {
+        &__grid {
+            grid-template-columns: 300px 380px;
+            column-gap: 40px;
+        }
+
+        &__skills {
+            grid-template-columns: 380px;
+            margin-top: 36px;
+            row-gap: 14px;
+        }
+    }
+    .skill {
+        &__wrapper {
+            width: 320px;
+        }
+        padding-left: 60px;
+    }
+
+    .title_fs36 {
+        font-size: 30px;
+    }
+
+    .resume {
+        &__wrapper {
+            grid-template: repeat(2, auto) / 1fr;
+            row-gap: 50px;
+        }
+    }
+
+    .skills {
+        &__wrapper {
+            gap: 30px;
+        }
+        &__ratings {
+            margin-top: 80px;
+            column-gap: 40px;
+            grid-template-columns: repeat(auto-fill, 340px);
+        }
+    }
+
+    .prices {
+        &__wrapper {
+            padding: 40px 0 0 0;
+            grid-template-columns: repeat(auto-fit, 350px);
+        }
+    }
+
+    .contacts {
+        padding-top: 70px;
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: 585px;
+            justify-content: center;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 280px);
+        }
+    }
+
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .title {
+        
+        &_fs48 {
+            font-size: 28px;
+        }
+    }
+
+    .promo {
+        &__title {
+            width: 300px;
+            line-height: 39px;
+        }
+    }
+
+    .about {
+        padding-top: 60px;
+        &__grid {
+            grid-template: 340px repeat(5, auto) / 1fr;
+            column-gap: 0;
+        }
+        &__img {
+            grid-row: 1 / 2;
+            border-radius: 5px;
+        }
+        &__subtitle {
+            margin-top: 40px;
+            grid-row: 2 / 3;
+        }
+        &__title {
+            margin-top: 26px;
+            grid-row: 3 / 4;
+        }
+        &__divider {
+            margin-top: 15px;
+            grid-row: 4 / 5;
+        }
+        &__text {
+            margin-top: 20px;
+            grid-row: 5 / 6;
+            max-width: 540px;
+        }
+        &__skills {
+            max-width: 540px;
+            margin-top: 20px;
+            grid-row: 6 / 7;
+            grid-template-columns: repeat(2, 260px);
+            column-gap: 20px;
+            grid-template-rows: repeat(2, minmax(auto, 116px));
+            grid-auto-rows: minmax(auto, 116px);
+            row-gap: 20px;
+            padding: 20px 40px 10px 0;
+        }
+
+    }
+
+    .skill {
+        &__wrapper {
+            width: 200px;
+        }
+        padding-left: 60px;
+    }
+
+    .resume {
+        padding-top: 60px;
+    }
+
+    .skills {
+        padding-top: 40px;
+        &__wrapper {
+            margin-top: 20px;
+        }
+        &__ratings {
+            margin-top: 60px;
+            grid-template-columns: 350px;
+        }
+    }
+
+    .portfolio {
+        padding-top: 40px;
+        &__wrapper {
+            margin-top: 40px;
+        }
+    }
+
+    .prices {
+        padding-top: 40px;
+        &__wrapper {
+            padding-top: 30px;
+            justify-content: center;
+        }
+    }
+
+    .contacts {
+        padding-top: 50px;
+        padding-bottom: 70px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 260px);
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .title {
+        &_fs36 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        
+        &_fs48 {
+            font-size: 26px;
+        }
+    }
+
+    .hamburger {
+        right: 20px;
+    }
+
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+
+    .promo {
+        background: url('../img/main_bg.jpg') no-repeat 57%/cover;
+        &__buttons {
+            margin-top: 30px;
+        }
+    }
+
+    .about{
+        padding-top: 40px;
+
+        &__grid {
+            grid-template-rows: 340px repeat(5, auto) ;
+            grid-template-columns: 300px 0;
+            justify-content: center;
+        }
+        .container {
+            padding-right: 10px;
+        }
+        &__img {
+            max-width: 300px;
+            grid-column: 1 / 2;
+        }
+        &__subtitle {
+            grid-column: 1 / 2;
+        }
+        &__title {
+            grid-column: 1 / 2;
+        }
+        &__divider {
+            grid-column: 1 / 2;
+        }
+        &__text {
+            max-width: 300px;
+            grid-column: 1 / 2;
+        }
+        &__skills {
+            max-width: 300px;
+            grid-column: 1 / 2;
+            grid-template-columns: 260px;
+            grid-template-rows: repeat(3, minmax(auto, 116px));
+            grid-auto-rows: minmax(auto, 116px);
+            row-gap: 20px;
+            
+        }
+    }
+
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            padding: 40px 5px 0 5px;
+            row-gap: 40px;
+        }
+
+        &__column {
+            li:nth-child(2) {
+                .resume__item-head {
+                    padding-top: 10px;
+                }
+                .resume__item {
+                    &:before {
+                        top: 33px;
+                    }
+                    &-icon {
+                        top: 15px;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .skills {
+        &__wrapper {
+            gap: 20px;
+        }
+        &__ratings {
+            margin-top: 40px;
+            grid-template-columns: 300px;
+            row-gap: 40px;
+        }
+    }
+
+    .prices {
+        &__wrapper {
+            padding-top: 20px;
+            grid-template-columns: repeat(auto-fit, 295px);
+        }
+    }
+
+    .contacts {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        &__wrapper {
+            grid-template-columns: 300px;
+            justify-content: center;
+        }
+        &__form {
+            grid-template: 45px 45px 145px 101px / 100%;
+        }
+        &__textarea, &__triggers {
+            grid-column: unset;
+        }
+        &__triggers {
+            grid-template-columns: unset;
+            grid-template: 36px 45px / 220px;
+            row-gap: 20px;
+            justify-content: center;
+        }
+        &__policy {
+            max-width: 180px;
+            order: 1;
+            justify-self: center;
+        }
+        &__btn {
+            order: 2;
+        }
+        
+    }
+}
